@@ -1,0 +1,12 @@
+.logoSizing--desktop {
+  font-size: 24px;
+  font-weight: 700;
+  color: #072C75;
+  letter-spacing: 1px;
+}
+
+.headerRow {
+  background-color: #ffffff;
+  border-bottom: 2px solid #072C75;
+  padding: 8px 24px;
+}
