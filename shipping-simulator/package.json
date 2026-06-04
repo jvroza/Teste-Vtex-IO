@@ -1,0 +1,10 @@
+{
+  "name": "shipping-simulator",
+  "version": "0.0.1",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "react": "^17.0.0",
+    "typescript": "^4.0.0"
+  }
+}

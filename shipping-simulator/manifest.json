@@ -1,0 +1,17 @@
+{
+  "vendor": "partnersigrowdev",
+  "name": "shipping-simulator",
+  "version": "0.0.1",
+  "title": "Shipping Simulator",
+  "description": "Componente simulador de frete",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x"
+  },
+  "dependencies": {
+    "vtex.product-context": "0.x",
+    "vtex.order-manager": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
