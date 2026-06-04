@@ -1,5 +1,6 @@
 import React from 'react'
 import type { ShippingOption } from '../typings/shipping'
+import styles from '../style/ShippingSimulator.css'
 
 interface Props {
   options: ShippingOption[]
@@ -26,16 +27,16 @@ export const ShippingResults: React.FC<Props> = ({ options }) => {
   if (options.length === 0) return null
 
   return (
-    <div className="shipping-simulator__results" aria-live="polite">
-      <h4 className="shipping-simulator__results-title">Opções de entrega</h4>
-      <ul className="shipping-simulator__list" role="list">
+    <div className={styles.results} aria-live="polite">
+      <h4 className={styles.resultsTitle}>Opções de entrega</h4>
+      <ul className={styles.list} role="list">
         {options.map((option) => (
-          <li key={option.id} className="shipping-simulator__item">
-            <span className="shipping-simulator__option-name">{option.name}</span>
-            <span className="shipping-simulator__option-deadline">
+          <li key={option.id} className={styles.item}>
+            <span className={styles.optionName}>{option.name}</span>
+            <span className={styles.optionDeadline}>
               {formatDeadline(option.shippingEstimate)}
             </span>
-            <span className="shipping-simulator__option-price">
+            <span className={styles.optionPrice}>
               {formatPrice(option.price)}
             </span>
           </li>
@@ -43,4 +44,4 @@ export const ShippingResults: React.FC<Props> = ({ options }) => {
       </ul>
     </div>
   )
-};
+}

@@ -4,9 +4,9 @@ import { useOrderForm } from 'vtex.order-manager/OrderForm'
 import { ShippingForm } from './components/ShippingForm'
 import { ShippingResults } from './components/ShippingResults'
 import type { ShippingOption } from './typings/shipping'
+import styles from './style/ShippingSimulator.css'
 
 const ShippingSimulator: React.FC = () => {
-
   const [postalCode, setPostalCode] = useState('')
   const [shippingOptions, setShippingOptions] = useState<ShippingOption[]>([])
   const [loading, setLoading] = useState(false)
@@ -64,9 +64,7 @@ const ShippingSimulator: React.FC = () => {
         }),
       })
 
-      if (!response.ok) {
-        throw new Error('Erro na API')
-      }
+      if (!response.ok) throw new Error('Erro na API')
 
       const data = await response.json()
       const slas: ShippingOption[] = data?.logisticsInfo?.[0]?.slas ?? []
@@ -84,7 +82,7 @@ const ShippingSimulator: React.FC = () => {
   }
 
   return (
-    <section aria-label="Simulação de frete" className="shipping-simulator">
+    <section aria-label="Simulação de frete" className={styles.container}>
       <ShippingForm
         postalCode={postalCode}
         onChange={setPostalCode}
@@ -92,7 +90,7 @@ const ShippingSimulator: React.FC = () => {
         loading={loading}
       />
       {error && (
-        <p role="alert" className="shipping-simulator__error">
+        <p role="alert" className={styles.error}>
           {error}
         </p>
       )}
