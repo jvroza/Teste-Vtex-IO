@@ -1,6 +1,6 @@
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]
+    "blocks": ["vtex.order-placed:order-placed"]
   },
 
   "store.account": {
@@ -24,13 +24,11 @@
 
   "product-summary.shelf": {
     "children": [
-      "product-summary-add-to-list-button",
+      "product-summary-image",
       "product-summary-name",
-      "product-rating-inline",
       "product-summary-space",
       "product-summary-price",
-      "product-identifier.summary",
-      "add-to-cart-button"
+      "vtex.add-to-cart-button:add-to-cart-button"
     ]
   }
 }

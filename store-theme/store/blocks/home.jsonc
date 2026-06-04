@@ -1,15 +1,30 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "rich-text"
+      "rich-text#banner",
+      "shelf#home"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
+
+  "rich-text#banner": {
+    "props": {
+      "text": "### Bem-vindo à Growdev Store",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "font": "t-heading-2"
+    }
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Produtos em destaque"
+      }
     }
   }
 }
