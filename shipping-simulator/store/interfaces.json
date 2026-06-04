@@ -1,0 +1,6 @@
+{
+  "shipping-simulator": {
+    "component": "ShippingSimulator",
+    "composition": "children"
+  }
+}
