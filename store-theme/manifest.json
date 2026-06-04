@@ -1,0 +1,38 @@
+{
+  "vendor": "partnersigrowdev",
+  "name": "store-theme",
+  "version": "0.0.1",
+  "title": "Store Theme",
+  "description": "Tema da loja com simulador de frete",
+  "builders": {
+    "store": "0.x",
+    "styles": "2.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.store-header": "2.x",
+    "vtex.product-summary": "2.x",
+    "vtex.store-footer": "2.x",
+    "vtex.store-components": "3.x",
+    "vtex.styleguide": "9.x",
+    "vtex.shelf": "1.x",
+    "vtex.menu": "2.x",
+    "vtex.minicart": "2.x",
+    "vtex.search-result": "3.x",
+    "vtex.login": "2.x",
+    "vtex.my-account": "1.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.store-drawer": "0.x",
+    "vtex.product-quantity": "1.x",
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.breadcrumb": "1.x",
+    "vtex.sticky-layout": "0.x",
+    "vtex.order-placed": "2.x",
+    "vtex.locale-switcher": "0.x",
+    "partnersigrowdev.shipping-simulator": "0.x",
+    "vtex.product-review-interfaces": "1.x",
+    "vtex.product-identifier": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
