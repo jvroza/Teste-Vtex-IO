@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../style/ShippingSimulator.css'
 
 interface Props {
   postalCode: string
@@ -15,11 +16,11 @@ const formatCEP = (value: string) => {
 
 export const ShippingForm: React.FC<Props> = ({ postalCode, onChange, onSubmit, loading }) => {
   return (
-    <div className="shipping-simulator__form">
-      <label htmlFor="postal-code-input" className="shipping-simulator__label">
+    <div className={styles.form}>
+      <label htmlFor="postal-code-input" className={styles.label}>
         Calcular frete
       </label>
-      <div className="shipping-simulator__input-row">
+      <div className={styles.inputRow}>
         <input
           id="postal-code-input"
           type="text"
@@ -30,14 +31,14 @@ export const ShippingForm: React.FC<Props> = ({ postalCode, onChange, onSubmit, 
           onKeyDown={(e) => e.key === 'Enter' && onSubmit()}
           maxLength={9}
           aria-label="Digite seu CEP"
-          className="shipping-simulator__input"
+          className={styles.input}
           disabled={loading}
         />
         <button
           onClick={onSubmit}
           disabled={loading}
           aria-busy={loading}
-          className="shipping-simulator__button"
+          className={styles.button}
         >
           {loading ? 'Calculando...' : 'Calcular'}
         </button>
@@ -46,7 +47,7 @@ export const ShippingForm: React.FC<Props> = ({ postalCode, onChange, onSubmit, 
         href="https://buscacepinter.correios.com.br/app/endereco/index.php"
         target="_blank"
         rel="noopener noreferrer"
-        className="shipping-simulator__cep-link"
+        className={styles.cepLink}
         aria-label="Não sei meu CEP, abre site dos Correios"
       >
         Não sei meu CEP
