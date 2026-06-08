@@ -1,12 +1,10 @@
-.logoSizing--desktop {
-  font-size: 24px;
-  font-weight: 700;
-  color: #072C75;
-  letter-spacing: 1px;
+.logoContainer {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
 }
 
-.headerRow {
-  background-color: #ffffff;
-  border-bottom: 2px solid #072C75;
-  padding: 8px 24px;
+.sizeDesktop {
+  width: 250px;
+  height: 40px;
 }
