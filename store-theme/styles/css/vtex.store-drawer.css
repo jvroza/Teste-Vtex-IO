@@ -1,0 +1,21 @@
+.menuIcon {
+  color: white;
+  fill: white;
+}
+
+.openIconContainer {
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.opened {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-left: 20px;
+}

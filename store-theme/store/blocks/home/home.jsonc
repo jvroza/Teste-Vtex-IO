@@ -8,7 +8,7 @@
 
   "rich-text#banner": {
     "props": {
-      "text": "### Bem-vindo à Growdev Store",
+      "text": "### Bem-vindo à Grow Store",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-2"

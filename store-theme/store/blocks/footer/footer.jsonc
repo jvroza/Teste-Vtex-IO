@@ -2,25 +2,27 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
+  "flex-layout.row#footer": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "fullWidth": true,
+      "blockClass": "footer-row"
+    },
+    "children": [
+      "rich-text#footer-copy"
+    ]
+  },
+  "rich-text#footer-copy": {
+    "props": {
+      "text": "© 2026 Grow Store. Todos os direitos reservados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "footer-text"
     }
   }
 }

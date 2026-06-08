@@ -1,0 +1,17 @@
+.strong--store-logo {
+  color: white;
+  padding: 8px 8px 8px 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wrapper--store-logo {
+  padding: 10px 10px;
+}
+
+.paragraph--footer-text {
+  color: white;
+  font-size: 14px;
+}

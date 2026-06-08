@@ -24,6 +24,7 @@
       "blockClass": "header-row"
     },
     "children": [
+      "drawer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
@@ -40,15 +41,13 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["rich-text#logo"]
   },
-  "logo": {
+  "rich-text#logo": {
     "props": {
-      "title": "Growdev Store",
-      "href": "/",
-      "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='40'%3E%3Crect width='160' height='40' fill='%23072C75' rx='4'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial,sans-serif' font-size='16' font-weight='bold' letter-spacing='1'%3EGrowdev Store%3C/text%3E%3C/svg%3E",
-      "width": "160",
-      "height": "40"
+      "text": "**Grow Store**",
+      "blockClass": "store-logo",
+      "href": "/"
     }
   },
   "header-layout.mobile": {
@@ -60,7 +59,7 @@
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo",
+      "rich-text#logo",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -73,6 +72,23 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": ["menu-item#home"]
+  },
+  "menu-item#home": {
+    "props": {
+      "id": "menu-item-home",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Home",
+        "text": "🏠 Home"
+      }
+    }
   }
 }

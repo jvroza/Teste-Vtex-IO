@@ -6,6 +6,9 @@
   },
 
   "flex-layout.row#product-main": {
+    "props": {
+    "blockClass": "product-main"
+    },
     "children": [
       "flex-layout.col#product-images",
       "flex-layout.col#product-info"

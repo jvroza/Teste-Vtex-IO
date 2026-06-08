@@ -1,0 +1,18 @@
+.flexRow--header-row {
+  background-color: #03044e;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  justify-content: space-between;
+}
+
+.flexRow--footer-row {
+  background-color: #03044e;
+  padding: 24px;
+}
+
+.flexRow--product-main {
+  margin-top: 48px;
+  padding: 0 24px;
+}
